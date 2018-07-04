@@ -9,9 +9,13 @@ const app = express();
 app.use(express.static("public"));
 app.get("*", (req, res) => {
   const store = createStore();
-  const activeRoute = routes.find(route => matchPath(req.path, route)) || {};
-
-  res.send(renderer(req, store));
+  const activeRoutes = routes.filter(route => matchPath(req.path, route));
+  const promises = activeRoutes.map(
+    route => (route.loadData ? route.loadData(store) : null)
+  );
+  Promise.all(promises).then(() => {
+    res.send(renderer(req, store));
+  });
 });
 
 app.listen(3000, () => {

@@ -20,9 +20,8 @@ class UsersList extends Component {
 }
 
 const mapStateToProps = ({ users }) => ({ users });
-const loadData = () => {
-  console.log("I'm trying to load some data");
-};
+const loadData = ({ dispatch }) => dispatch(fetchUsers());
+
 export { loadData };
 export default connect(
   mapStateToProps,
