@@ -7,18 +7,25 @@ import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import { Provider } from "react-redux";
 import { Route, Switch } from "react-router-dom";
+import axios from "axios";
+import { renderRoutes } from "react-router-config";
 import routes from "./routes";
 import reducers from "./reducers";
 
+const axiosInstance = axios.create({
+  baseURL: "/api"
+});
 const store = createStore(
   reducers,
   window.INITIAL_STATE || {},
-  applyMiddleware(thunk)
+  applyMiddleware(thunk.withExtraArgument(axiosInstance))
 );
 ReactDOM.hydrate(
   <Provider store={store}>
     <BrowserRouter>
-      <Switch>
+      {renderRoutes(routes)}
+      {/* <Switch>
+    
         {routes.map(({ path, exact, component: C, ...rest }) => (
           <Route
             key={path}
@@ -27,7 +34,7 @@ ReactDOM.hydrate(
             render={props => <C {...props} {...rest} />}
           />
         ))}
-      </Switch>
+      </Switch> */}
     </BrowserRouter>
   </Provider>,
   document.querySelector("#root")
