@@ -2,9 +2,9 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="center-align" style={{ margin: "200px" }}>
+    <div>
       <h3>Welcome</h3>
-      <p>Checkout these awesome features</p>
+      <p>Change your app here</p>
     </div>
   );
 };

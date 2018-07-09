@@ -12,13 +12,10 @@ import { renderRoutes } from "react-router-config";
 import routes from "./routes";
 import reducers from "./reducers";
 
-const axiosInstance = axios.create({
-  baseURL: "/api"
-});
 const store = createStore(
   reducers,
   window.INITIAL_STATE || {},
-  applyMiddleware(thunk.withExtraArgument(axiosInstance))
+  applyMiddleware()
 );
 ReactDOM.hydrate(
   <Provider store={store}>

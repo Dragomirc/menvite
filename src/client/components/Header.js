@@ -4,22 +4,20 @@ import { connect } from "react-redux";
 
 const Header = ({ auth }) => {
   const authButton = auth ? (
-    <a href="/api/logout">Logout</a>
+    <a href="/yourLogoutEndpoint">Logout</a>
   ) : (
-    <a href="/api/auth/google">Login</a>
+    <a href="/yourSigninEndpoint">Login</a>
   );
   return (
     <nav>
-      <div className="nav-wrapper">
-        <Link to="/" className="brand-logo">
-          React SSR
-        </Link>
-        <ul className="right">
+      <div>
+        <Link to="/">Home page logo</Link>
+        <ul>
           <li>
-            <Link to="/users">Users</Link>
+            <Link to="/Example1Endpoint">Example1</Link>
           </li>
           <li>
-            <Link to="/admins">Admins</Link>
+            <Link to="/Example2Endpoint">Example2</Link>
           </li>
           <li>{authButton}</li>
         </ul>
