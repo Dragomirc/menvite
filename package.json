@@ -41,13 +41,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dragomirc/ServerRenderingJobSearch.git"
+    "url": "https://github.com/Dragomirc/ReactServerRenderingBoilerplate.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Dragomirc/ServerRenderingJobSearch/issues"
-  },
-  "homepage": "https://github.com/Dragomirc/ServerRenderingJobSearch#readme"
+  "license": "ISC"
 }
