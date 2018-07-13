@@ -1,14 +1,10 @@
 import React from "react";
-import App from "./App";
+import HomePage from "./pages/HomePage";
 
 export default [
   {
-    ...App,
-    routes: [
-      // Add your routes here
-      {
-        ...NotFoundPage
-      }
-    ]
+    path: "/",
+    exact: true,
+    component: HomePage
   }
 ];

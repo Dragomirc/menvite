@@ -3,24 +3,14 @@ import { renderToString } from "react-dom/server";
 import { StaticRouter, Route, Switch } from "react-router-dom";
 import { Provider } from "react-redux";
 import serialize from "serialize-javascript";
-import { renderRoutes } from "react-router-config";
 import routes from "../client/routes";
+import App from "../client/App";
 
 export default (req, store, context) => {
   const content = renderToString(
     <Provider store={store}>
       <StaticRouter location={req.path} context={context}>
-        {renderRoutes(routes)}
-        {/* <Switch>
-          {routes.map(({ path, exact, component: C, ...rest }) => (
-            <Route
-              key={path}
-              path={path}
-              exact={exact}
-              render={props => <C {...props} {...rest} />}
-            />
-          ))}
-        </Switch> */}
+        <App />
       </StaticRouter>
     </Provider>
   );

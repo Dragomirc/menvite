@@ -1,19 +1,24 @@
 import React from "react";
-import { renderRoutes } from "react-router-config";
-import Header from "./components/Header";
-import { fetchCurrentUser } from "./actions";
+import { Switch, Route } from "react-router";
+import routes from "./routes";
+import NotFoundPage from "./pages/NotFoundPage";
 
-const App = ({ route }) => {
+const App = props => {
   return (
     <div>
-      <Header />
-      {renderRoutes(route.routes)}
+      <Switch>
+        {routes.map(({ path, exact, component: C, ...rest }) => (
+          <Route
+            key={path}
+            path={path}
+            exact={exact}
+            render={props => <C {...props} {...rest} />}
+          />
+        ))}
+        <Route render={props => <NotFoundPage {...props} />} />
+      </Switch>
     </div>
   );
 };
 
-const loadData = ({ dispatch }) => dispatch(fetchCurrentUser());
-export default {
-  component: App,
-  loadData
-};
+export default App;
