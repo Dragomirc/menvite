@@ -6,6 +6,7 @@ const shellPlugin = require("webpack-shell-plugin");
 // const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 
 var baseConfig = {
+  mode: "development",
   module: {
     rules: [
       {
@@ -17,6 +18,17 @@ var baseConfig = {
         }
       }
     ]
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendors",
+          chunks: "all"
+        }
+      }
+    }
   }
 };
 
@@ -24,7 +36,7 @@ var browserConfig = {
   entry: "./src/client/index.js",
   output: {
     path: path.resolve(__dirname, "public"),
-    filename: "bundle.js",
+    filename: "[name].[hash].js",
     publicPath: "/"
   }
   // mode: "development",
