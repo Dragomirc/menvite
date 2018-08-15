@@ -1,5 +1,4 @@
 //Startup point for the client side application
-import "babel-polyfill";
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
@@ -15,7 +14,9 @@ const store = createStore(
   window.INITIAL_STATE || {},
   applyMiddleware(thunk)
 );
-ReactDOM.hydrate(
+
+const renderMethod = module.hot ? ReactDOM.render : ReactDOM.hydrate;
+renderMethod(
   <Provider store={store}>
     <BrowserRouter>
       <App />

@@ -1,7 +1,7 @@
 import "babel-polyfill";
 import express from "express";
 import { matchPath } from "react-router-dom";
-import routes from "./client/routes";
+import routes from "../client/routes";
 import renderer from "./helpers/renderer.js";
 import createStore from "./helpers/createStore";
 
@@ -10,7 +10,6 @@ const app = express();
 app.use(express.static("public"));
 app.get("*", (req, res, next) => {
   const store = createStore(req);
-
   const activeRoute = routes.find(route => matchPath(req.path, route)) || {};
   const promise = activeRoute.fetchInitialData
     ? activeRoute.fetchInitialData(store)

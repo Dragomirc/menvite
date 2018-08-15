@@ -3,8 +3,8 @@ import { renderToString } from "react-dom/server";
 import { StaticRouter, Route, Switch } from "react-router-dom";
 import { Provider } from "react-redux";
 import serialize from "serialize-javascript";
-import routes from "../client/routes";
-import App from "../client/App";
+import routes from "../../client/routes";
+import App from "../../client/App";
 
 export default (req, store, context) => {
   const content = renderToString(
@@ -16,9 +16,10 @@ export default (req, store, context) => {
   );
 
   return `
+  <!DOCTYPE html>
    <html>
         <head>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">  
+          <title></title> 
           </head>
         <body>
           <div id="root">${content}</div>
