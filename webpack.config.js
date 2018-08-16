@@ -1,28 +1,51 @@
 const path = require("path");
 const webpack = require("webpack");
-const merge = require("webpack-merge");
-const nodeExternals = require("webpack-node-externals");
-const shellPlugin = require("webpack-shell-plugin");
-// const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-var baseConfig = {
+module.exports = {
   mode: "development",
+  entry: "./src/client/index.js",
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "[name].js",
+    chunkFilename: "[name].bundle.js"
+  },
+
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    compress: true,
+    port: 8080,
+    historyApiFallback: true,
+    hot: true
+  },
+  devtool: "cheap-module-eval-source-map",
   module: {
     rules: [
       {
-        test: /\.js?$/,
-        loader: "babel-loader",
-        exclude: /node_modules/,
-        options: {
-          presets: ["react", "env", "stage-2"]
-        }
+        test: /\.js$/,
+        use: "babel-loader",
+        exclude: /node_modules/
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" },
+          { loader: "sass-loader" }
+        ]
       }
     ]
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "template.html"
+    }),
+    new webpack.HotModuleReplacementPlugin()
+  ],
   optimization: {
     splitChunks: {
       cacheGroups: {
-        vendors: {
+        commons: {
           test: /[\\/]node_modules[\\/]/,
           name: "vendors",
           chunks: "all"
@@ -31,39 +54,3 @@ var baseConfig = {
     }
   }
 };
-
-var browserConfig = {
-  entry: "./src/client/index.js",
-  output: {
-    path: path.resolve(__dirname, "public"),
-    filename: "[name].[hash].js",
-    publicPath: "/"
-  }
-  // mode: "development",
-
-  // devServer: {
-  //   port: 8080,
-  //   open: true,
-  //   proxy: {
-  //     "*": "http://localhost:3000"
-  //   }
-  // }
-};
-
-var serverConfig = {
-  entry: "./src/server/server.js",
-  target: "node",
-  externals: [nodeExternals()],
-  output: {
-    path: path.resolve(__dirname, "build"),
-    filename: "bundle.js",
-    publicPath: "/"
-  },
-
-  plugins: [new shellPlugin({ onBuildEnd: ["nodemon ./build/bundle.js"] })]
-};
-
-module.exports = [
-  merge(baseConfig, browserConfig),
-  merge(baseConfig, serverConfig)
-];

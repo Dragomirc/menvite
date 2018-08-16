@@ -15,8 +15,7 @@ const store = createStore(
   applyMiddleware(thunk)
 );
 
-const renderMethod = module.hot ? ReactDOM.render : ReactDOM.hydrate;
-renderMethod(
+ReactDOM.hydrate(
   <Provider store={store}>
     <BrowserRouter>
       <App />
