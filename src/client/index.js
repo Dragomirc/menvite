@@ -1,6 +1,5 @@
-//Startup point for the client side application
 import React from "react";
-import ReactDOM from "react-dom";
+import { hydrate, render } from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
@@ -14,8 +13,8 @@ const store = createStore(
   window.INITIAL_STATE || {},
   applyMiddleware(thunk)
 );
-
-ReactDOM.hydrate(
+const renderMethod = module.hot ? render : hydrate;
+renderMethod(
   <Provider store={store}>
     <BrowserRouter>
       <App />
