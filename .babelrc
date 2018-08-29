@@ -1,8 +1,6 @@
 {
   "presets": ["env","react","stage-2"],
   "plugins": [
-    "syntax-dynamic-import",
-    "dynamic-import-node",
     "react-loadable/babel"
   ]
 }

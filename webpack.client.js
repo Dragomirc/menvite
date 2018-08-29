@@ -1,5 +1,6 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { ReactLoadablePlugin } = require("react-loadable/webpack");
 
 module.exports = {
   mode: "development",
@@ -7,8 +8,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "public"),
     filename: "[name].js",
-    publicPath: "public",
-    chunkFilename: "[name].[chunkhash].js"
+    publicPath: "/",
+    chunkFilename: "[name].js"
   },
   module: {
     rules: [
@@ -34,6 +35,20 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
+    }),
+    new ReactLoadablePlugin({
+      filename: "./build/react-loadable.json"
     })
-  ]
+  ],
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendors",
+          chunks: "all"
+        }
+      }
+    }
+  }
 };

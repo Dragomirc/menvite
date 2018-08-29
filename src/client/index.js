@@ -8,6 +8,7 @@ import { Provider } from "react-redux";
 import axios from "axios";
 import App from "./App";
 import reducers from "./reducers";
+import Loadable from "react-loadable";
 
 const store = createStore(
   reducers,
@@ -15,11 +16,13 @@ const store = createStore(
   applyMiddleware(thunk)
 );
 
-ReactDOM.hydrate(
-  <Provider store={store}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </Provider>,
-  document.querySelector("#root")
+Loadable.preloadReady().then(() =>
+  ReactDOM.hydrate(
+    <Provider store={store}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>,
+    document.querySelector("#root")
+  )
 );

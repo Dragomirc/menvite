@@ -1,5 +1,6 @@
 import "babel-polyfill";
 import express from "express";
+import path from "path";
 import { matchPath } from "react-router-dom";
 import Loadable from "react-loadable";
 import routes from "../client/routes";
@@ -9,6 +10,10 @@ import createStore from "./helpers/createStore";
 const app = express();
 
 app.use(express.static("public"));
+
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "..", "..", "public", "index.html"));
+// });
 app.get("*", (req, res, next) => {
   const store = createStore(req);
   const activeRoute = routes.find(route => matchPath(req.path, route)) || {};
