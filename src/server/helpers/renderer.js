@@ -1,9 +1,8 @@
 import React from "react";
 import { renderToString } from "react-dom/server";
-import { StaticRouter, Route, Switch } from "react-router-dom";
+import { StaticRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import serialize from "serialize-javascript";
-import routes from "../../client/routes";
 import App from "../../client/App";
 
 export default (req, store, context) => {

@@ -10,8 +10,9 @@ const app = express();
 app.use(express.static("public"));
 app.get("*", (req, res, next) => {
   const store = createStore(req);
-  const activeRoute = routes.find(route => matchPath(req.path, route)) || {};
-  const promise = activeRoute.fetchInitialData
+  const activeRoutes = routes.filter(route => matchPath(req.path, route)) || [];
+
+  const promise = activeRoutes.fetchInitialData
     ? activeRoute.fetchInitialData(store)
     : Promise.resolve();
 
