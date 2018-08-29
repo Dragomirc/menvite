@@ -6,7 +6,9 @@ module.exports = {
   entry: "./src/client/index.js",
   output: {
     path: path.resolve(__dirname, "public"),
-    filename: "bundle.js"
+    filename: "[name].js",
+    publicPath: "public",
+    chunkFilename: "[name].[chunkhash].js"
   },
   module: {
     rules: [

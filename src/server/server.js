@@ -1,6 +1,7 @@
 import "babel-polyfill";
 import express from "express";
 import { matchPath } from "react-router-dom";
+import Loadable from "react-loadable";
 import routes from "../client/routes";
 import renderer from "./helpers/renderer.js";
 import createStore from "./helpers/createStore";
@@ -29,7 +30,8 @@ app.get("*", (req, res, next) => {
     })
     .catch(next);
 });
-
-app.listen(3000, () => {
-  console.log("Listening on port 3000");
+Loadable.preloadAll().then(() => {
+  app.listen(3000, () => {
+    console.log("Listening on port 3000");
+  });
 });

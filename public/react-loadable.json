@@ -1,0 +1,1028 @@
+{
+  "axios": [
+    {
+      "id": "./node_modules/axios/index.js",
+      "name": "./node_modules/axios/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./adapters/xhr": [
+    {
+      "id": "./node_modules/axios/lib/adapters/xhr.js",
+      "name": "./node_modules/axios/lib/adapters/xhr.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./lib/axios": [
+    {
+      "id": "./node_modules/axios/lib/axios.js",
+      "name": "./node_modules/axios/lib/axios.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./cancel/Cancel": [
+    {
+      "id": "./node_modules/axios/lib/cancel/Cancel.js",
+      "name": "./node_modules/axios/lib/cancel/Cancel.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./cancel/CancelToken": [
+    {
+      "id": "./node_modules/axios/lib/cancel/CancelToken.js",
+      "name": "./node_modules/axios/lib/cancel/CancelToken.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./cancel/isCancel": [
+    {
+      "id": "./node_modules/axios/lib/cancel/isCancel.js",
+      "name": "./node_modules/axios/lib/cancel/isCancel.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./core/Axios": [
+    {
+      "id": "./node_modules/axios/lib/core/Axios.js",
+      "name": "./node_modules/axios/lib/core/Axios.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./InterceptorManager": [
+    {
+      "id": "./node_modules/axios/lib/core/InterceptorManager.js",
+      "name": "./node_modules/axios/lib/core/InterceptorManager.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "../core/createError": [
+    {
+      "id": "./node_modules/axios/lib/core/createError.js",
+      "name": "./node_modules/axios/lib/core/createError.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./dispatchRequest": [
+    {
+      "id": "./node_modules/axios/lib/core/dispatchRequest.js",
+      "name": "./node_modules/axios/lib/core/dispatchRequest.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./enhanceError": [
+    {
+      "id": "./node_modules/axios/lib/core/enhanceError.js",
+      "name": "./node_modules/axios/lib/core/enhanceError.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./../core/settle": [
+    {
+      "id": "./node_modules/axios/lib/core/settle.js",
+      "name": "./node_modules/axios/lib/core/settle.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./transformData": [
+    {
+      "id": "./node_modules/axios/lib/core/transformData.js",
+      "name": "./node_modules/axios/lib/core/transformData.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./defaults": [
+    {
+      "id": "./node_modules/axios/lib/defaults.js",
+      "name": "./node_modules/axios/lib/defaults.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./helpers/bind": [
+    {
+      "id": "./node_modules/axios/lib/helpers/bind.js",
+      "name": "./node_modules/axios/lib/helpers/bind.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./../helpers/btoa": [
+    {
+      "id": "./node_modules/axios/lib/helpers/btoa.js",
+      "name": "./node_modules/axios/lib/helpers/btoa.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./../helpers/buildURL": [
+    {
+      "id": "./node_modules/axios/lib/helpers/buildURL.js",
+      "name": "./node_modules/axios/lib/helpers/buildURL.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./../helpers/combineURLs": [
+    {
+      "id": "./node_modules/axios/lib/helpers/combineURLs.js",
+      "name": "./node_modules/axios/lib/helpers/combineURLs.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./../helpers/cookies": [
+    {
+      "id": "./node_modules/axios/lib/helpers/cookies.js",
+      "name": "./node_modules/axios/lib/helpers/cookies.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./../helpers/isAbsoluteURL": [
+    {
+      "id": "./node_modules/axios/lib/helpers/isAbsoluteURL.js",
+      "name": "./node_modules/axios/lib/helpers/isAbsoluteURL.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./../helpers/isURLSameOrigin": [
+    {
+      "id": "./node_modules/axios/lib/helpers/isURLSameOrigin.js",
+      "name": "./node_modules/axios/lib/helpers/isURLSameOrigin.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./helpers/normalizeHeaderName": [
+    {
+      "id": "./node_modules/axios/lib/helpers/normalizeHeaderName.js",
+      "name": "./node_modules/axios/lib/helpers/normalizeHeaderName.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./../helpers/parseHeaders": [
+    {
+      "id": "./node_modules/axios/lib/helpers/parseHeaders.js",
+      "name": "./node_modules/axios/lib/helpers/parseHeaders.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./helpers/spread": [
+    {
+      "id": "./node_modules/axios/lib/helpers/spread.js",
+      "name": "./node_modules/axios/lib/helpers/spread.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./utils": [
+    {
+      "id": "./node_modules/axios/lib/utils.js",
+      "name": "./node_modules/axios/lib/utils.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "fbjs/lib/ExecutionEnvironment": [
+    {
+      "id": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+      "name": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./camelize": [
+    {
+      "id": "./node_modules/fbjs/lib/camelize.js",
+      "name": "./node_modules/fbjs/lib/camelize.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "fbjs/lib/camelizeStyleName": [
+    {
+      "id": "./node_modules/fbjs/lib/camelizeStyleName.js",
+      "name": "./node_modules/fbjs/lib/camelizeStyleName.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "fbjs/lib/containsNode": [
+    {
+      "id": "./node_modules/fbjs/lib/containsNode.js",
+      "name": "./node_modules/fbjs/lib/containsNode.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "fbjs/lib/emptyFunction": [
+    {
+      "id": "./node_modules/fbjs/lib/emptyFunction.js",
+      "name": "./node_modules/fbjs/lib/emptyFunction.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "fbjs/lib/emptyObject": [
+    {
+      "id": "./node_modules/fbjs/lib/emptyObject.js",
+      "name": "./node_modules/fbjs/lib/emptyObject.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "fbjs/lib/getActiveElement": [
+    {
+      "id": "./node_modules/fbjs/lib/getActiveElement.js",
+      "name": "./node_modules/fbjs/lib/getActiveElement.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./hyphenate": [
+    {
+      "id": "./node_modules/fbjs/lib/hyphenate.js",
+      "name": "./node_modules/fbjs/lib/hyphenate.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "fbjs/lib/hyphenateStyleName": [
+    {
+      "id": "./node_modules/fbjs/lib/hyphenateStyleName.js",
+      "name": "./node_modules/fbjs/lib/hyphenateStyleName.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "fbjs/lib/invariant": [
+    {
+      "id": "./node_modules/fbjs/lib/invariant.js",
+      "name": "./node_modules/fbjs/lib/invariant.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./isNode": [
+    {
+      "id": "./node_modules/fbjs/lib/isNode.js",
+      "name": "./node_modules/fbjs/lib/isNode.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./isTextNode": [
+    {
+      "id": "./node_modules/fbjs/lib/isTextNode.js",
+      "name": "./node_modules/fbjs/lib/isTextNode.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "fbjs/lib/shallowEqual": [
+    {
+      "id": "./node_modules/fbjs/lib/shallowEqual.js",
+      "name": "./node_modules/fbjs/lib/shallowEqual.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "fbjs/lib/warning": [
+    {
+      "id": "./node_modules/fbjs/lib/warning.js",
+      "name": "./node_modules/fbjs/lib/warning.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./DOMUtils": [
+    {
+      "id": "./node_modules/history/es/DOMUtils.js",
+      "name": "./node_modules/history/es/DOMUtils.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./LocationUtils": [
+    {
+      "id": "./node_modules/history/es/LocationUtils.js",
+      "name": "./node_modules/history/es/LocationUtils.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./PathUtils": [
+    {
+      "id": "./node_modules/history/es/PathUtils.js",
+      "name": "./node_modules/history/es/PathUtils.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./createBrowserHistory": [
+    {
+      "id": "./node_modules/history/es/createBrowserHistory.js",
+      "name": "./node_modules/history/es/createBrowserHistory.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./createHashHistory": [
+    {
+      "id": "./node_modules/history/es/createHashHistory.js",
+      "name": "./node_modules/history/es/createHashHistory.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./createMemoryHistory": [
+    {
+      "id": "./node_modules/history/es/createMemoryHistory.js",
+      "name": "./node_modules/history/es/createMemoryHistory.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./createTransitionManager": [
+    {
+      "id": "./node_modules/history/es/createTransitionManager.js",
+      "name": "./node_modules/history/es/createTransitionManager.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "history": [
+    {
+      "id": "./node_modules/history/es/index.js",
+      "name": "./node_modules/history/es/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "warning": [
+    {
+      "id": "./node_modules/history/node_modules/warning/browser.js",
+      "name": "./node_modules/history/node_modules/warning/browser.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    },
+    {
+      "id": "./node_modules/warning/warning.js",
+      "name": "./node_modules/warning/warning.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "hoist-non-react-statics": [
+    {
+      "id": "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
+      "name": "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "invariant": [
+    {
+      "id": "./node_modules/invariant/browser.js",
+      "name": "./node_modules/invariant/browser.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "is-buffer": [
+    {
+      "id": "./node_modules/is-buffer/index.js",
+      "name": "./node_modules/is-buffer/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "isarray": [
+    {
+      "id": "./node_modules/isarray/index.js",
+      "name": "./node_modules/isarray/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./_Symbol.js": [
+    {
+      "id": "./node_modules/lodash-es/_Symbol.js",
+      "name": "./node_modules/lodash-es/_Symbol.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./_baseGetTag.js": [
+    {
+      "id": "./node_modules/lodash-es/_baseGetTag.js",
+      "name": "./node_modules/lodash-es/_baseGetTag.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./_freeGlobal.js": [
+    {
+      "id": "./node_modules/lodash-es/_freeGlobal.js",
+      "name": "./node_modules/lodash-es/_freeGlobal.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./_getPrototype.js": [
+    {
+      "id": "./node_modules/lodash-es/_getPrototype.js",
+      "name": "./node_modules/lodash-es/_getPrototype.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./_getRawTag.js": [
+    {
+      "id": "./node_modules/lodash-es/_getRawTag.js",
+      "name": "./node_modules/lodash-es/_getRawTag.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./_objectToString.js": [
+    {
+      "id": "./node_modules/lodash-es/_objectToString.js",
+      "name": "./node_modules/lodash-es/_objectToString.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./_overArg.js": [
+    {
+      "id": "./node_modules/lodash-es/_overArg.js",
+      "name": "./node_modules/lodash-es/_overArg.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./_root.js": [
+    {
+      "id": "./node_modules/lodash-es/_root.js",
+      "name": "./node_modules/lodash-es/_root.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./isObjectLike.js": [
+    {
+      "id": "./node_modules/lodash-es/isObjectLike.js",
+      "name": "./node_modules/lodash-es/isObjectLike.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "lodash-es/isPlainObject": [
+    {
+      "id": "./node_modules/lodash-es/isPlainObject.js",
+      "name": "./node_modules/lodash-es/isPlainObject.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "object-assign": [
+    {
+      "id": "./node_modules/object-assign/index.js",
+      "name": "./node_modules/object-assign/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "path-to-regexp": [
+    {
+      "id": "./node_modules/path-to-regexp/index.js",
+      "name": "./node_modules/path-to-regexp/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./../../process/browser.js": [
+    {
+      "id": "./node_modules/process/browser.js",
+      "name": "./node_modules/process/browser.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "prop-types/checkPropTypes": [
+    {
+      "id": "./node_modules/prop-types/checkPropTypes.js",
+      "name": "./node_modules/prop-types/checkPropTypes.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./factoryWithTypeCheckers": [
+    {
+      "id": "./node_modules/prop-types/factoryWithTypeCheckers.js",
+      "name": "./node_modules/prop-types/factoryWithTypeCheckers.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "prop-types": [
+    {
+      "id": "./node_modules/prop-types/index.js",
+      "name": "./node_modules/prop-types/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./lib/ReactPropTypesSecret": [
+    {
+      "id": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
+      "name": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./cjs/react-dom.development.js": [
+    {
+      "id": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "name": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "react-dom": [
+    {
+      "id": "./node_modules/react-dom/index.js",
+      "name": "./node_modules/react-dom/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "react-loadable": [
+    {
+      "id": "./node_modules/react-loadable/lib/index.js",
+      "name": "./node_modules/react-loadable/lib/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./components/Provider": [
+    {
+      "id": "./node_modules/react-redux/es/components/Provider.js",
+      "name": "./node_modules/react-redux/es/components/Provider.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./components/connectAdvanced": [
+    {
+      "id": "./node_modules/react-redux/es/components/connectAdvanced.js",
+      "name": "./node_modules/react-redux/es/components/connectAdvanced.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./connect/connect": [
+    {
+      "id": "./node_modules/react-redux/es/connect/connect.js",
+      "name": "./node_modules/react-redux/es/connect/connect.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./mapDispatchToProps": [
+    {
+      "id": "./node_modules/react-redux/es/connect/mapDispatchToProps.js",
+      "name": "./node_modules/react-redux/es/connect/mapDispatchToProps.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./mapStateToProps": [
+    {
+      "id": "./node_modules/react-redux/es/connect/mapStateToProps.js",
+      "name": "./node_modules/react-redux/es/connect/mapStateToProps.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./mergeProps": [
+    {
+      "id": "./node_modules/react-redux/es/connect/mergeProps.js",
+      "name": "./node_modules/react-redux/es/connect/mergeProps.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./selectorFactory": [
+    {
+      "id": "./node_modules/react-redux/es/connect/selectorFactory.js",
+      "name": "./node_modules/react-redux/es/connect/selectorFactory.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./verifySubselectors": [
+    {
+      "id": "./node_modules/react-redux/es/connect/verifySubselectors.js",
+      "name": "./node_modules/react-redux/es/connect/verifySubselectors.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./wrapMapToProps": [
+    {
+      "id": "./node_modules/react-redux/es/connect/wrapMapToProps.js",
+      "name": "./node_modules/react-redux/es/connect/wrapMapToProps.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "react-redux": [
+    {
+      "id": "./node_modules/react-redux/es/index.js",
+      "name": "./node_modules/react-redux/es/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "../utils/PropTypes": [
+    {
+      "id": "./node_modules/react-redux/es/utils/PropTypes.js",
+      "name": "./node_modules/react-redux/es/utils/PropTypes.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "../utils/Subscription": [
+    {
+      "id": "./node_modules/react-redux/es/utils/Subscription.js",
+      "name": "./node_modules/react-redux/es/utils/Subscription.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "../utils/shallowEqual": [
+    {
+      "id": "./node_modules/react-redux/es/utils/shallowEqual.js",
+      "name": "./node_modules/react-redux/es/utils/shallowEqual.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "../utils/verifyPlainObject": [
+    {
+      "id": "./node_modules/react-redux/es/utils/verifyPlainObject.js",
+      "name": "./node_modules/react-redux/es/utils/verifyPlainObject.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "../utils/warning": [
+    {
+      "id": "./node_modules/react-redux/es/utils/warning.js",
+      "name": "./node_modules/react-redux/es/utils/warning.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./BrowserRouter": [
+    {
+      "id": "./node_modules/react-router-dom/es/BrowserRouter.js",
+      "name": "./node_modules/react-router-dom/es/BrowserRouter.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./HashRouter": [
+    {
+      "id": "./node_modules/react-router-dom/es/HashRouter.js",
+      "name": "./node_modules/react-router-dom/es/HashRouter.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./Link": [
+    {
+      "id": "./node_modules/react-router-dom/es/Link.js",
+      "name": "./node_modules/react-router-dom/es/Link.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./MemoryRouter": [
+    {
+      "id": "./node_modules/react-router-dom/es/MemoryRouter.js",
+      "name": "./node_modules/react-router-dom/es/MemoryRouter.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/MemoryRouter.js",
+      "name": "./node_modules/react-router/es/MemoryRouter.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./NavLink": [
+    {
+      "id": "./node_modules/react-router-dom/es/NavLink.js",
+      "name": "./node_modules/react-router-dom/es/NavLink.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./Prompt": [
+    {
+      "id": "./node_modules/react-router-dom/es/Prompt.js",
+      "name": "./node_modules/react-router-dom/es/Prompt.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/Prompt.js",
+      "name": "./node_modules/react-router/es/Prompt.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./Redirect": [
+    {
+      "id": "./node_modules/react-router-dom/es/Redirect.js",
+      "name": "./node_modules/react-router-dom/es/Redirect.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/Redirect.js",
+      "name": "./node_modules/react-router/es/Redirect.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./Route": [
+    {
+      "id": "./node_modules/react-router-dom/es/Route.js",
+      "name": "./node_modules/react-router-dom/es/Route.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/Route.js",
+      "name": "./node_modules/react-router/es/Route.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./Router": [
+    {
+      "id": "./node_modules/react-router-dom/es/Router.js",
+      "name": "./node_modules/react-router-dom/es/Router.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/Router.js",
+      "name": "./node_modules/react-router/es/Router.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./StaticRouter": [
+    {
+      "id": "./node_modules/react-router-dom/es/StaticRouter.js",
+      "name": "./node_modules/react-router-dom/es/StaticRouter.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/StaticRouter.js",
+      "name": "./node_modules/react-router/es/StaticRouter.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./Switch": [
+    {
+      "id": "./node_modules/react-router-dom/es/Switch.js",
+      "name": "./node_modules/react-router-dom/es/Switch.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/Switch.js",
+      "name": "./node_modules/react-router/es/Switch.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./generatePath": [
+    {
+      "id": "./node_modules/react-router-dom/es/generatePath.js",
+      "name": "./node_modules/react-router-dom/es/generatePath.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/generatePath.js",
+      "name": "./node_modules/react-router/es/generatePath.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "react-router-dom": [
+    {
+      "id": "./node_modules/react-router-dom/es/index.js",
+      "name": "./node_modules/react-router-dom/es/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./matchPath": [
+    {
+      "id": "./node_modules/react-router-dom/es/matchPath.js",
+      "name": "./node_modules/react-router-dom/es/matchPath.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/matchPath.js",
+      "name": "./node_modules/react-router/es/matchPath.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./withRouter": [
+    {
+      "id": "./node_modules/react-router-dom/es/withRouter.js",
+      "name": "./node_modules/react-router-dom/es/withRouter.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    },
+    {
+      "id": "./node_modules/react-router/es/withRouter.js",
+      "name": "./node_modules/react-router/es/withRouter.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "react-router": [
+    {
+      "id": "./node_modules/react-router/es/index.js",
+      "name": "./node_modules/react-router/es/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./cjs/react.development.js": [
+    {
+      "id": "./node_modules/react/cjs/react.development.js",
+      "name": "./node_modules/react/cjs/react.development.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "react": [
+    {
+      "id": "./node_modules/react/index.js",
+      "name": "./node_modules/react/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "redux-thunk": [
+    {
+      "id": "./node_modules/redux-thunk/es/index.js",
+      "name": "./node_modules/redux-thunk/es/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "redux": [
+    {
+      "id": "./node_modules/redux/es/redux.js",
+      "name": "./node_modules/redux/es/redux.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "resolve-pathname": [
+    {
+      "id": "./node_modules/resolve-pathname/index.js",
+      "name": "./node_modules/resolve-pathname/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "symbol-observable": [
+    {
+      "id": "./node_modules/symbol-observable/es/index.js",
+      "name": "./node_modules/symbol-observable/es/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./ponyfill.js": [
+    {
+      "id": "./node_modules/symbol-observable/es/ponyfill.js",
+      "name": "./node_modules/symbol-observable/es/ponyfill.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "value-equal": [
+    {
+      "id": "./node_modules/value-equal/index.js",
+      "name": "./node_modules/value-equal/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./../../webpack/buildin/global.js": [
+    {
+      "id": "./node_modules/webpack/buildin/global.js",
+      "name": "./node_modules/webpack/buildin/global.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./../../webpack/buildin/harmony-module.js": [
+    {
+      "id": "./node_modules/webpack/buildin/harmony-module.js",
+      "name": "./node_modules/webpack/buildin/harmony-module.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./App": [
+    {
+      "id": "./src/client/App.js",
+      "name": "./src/client/App.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./src/client/index.js": [
+    {
+      "id": "./src/client/index.js",
+      "name": "./src/client/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./pages/HomePage": [
+    {
+      "id": "./src/client/pages/HomePage.js",
+      "name": "./src/client/pages/HomePage.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./pages/NotFoundPage": [
+    {
+      "id": "./src/client/pages/NotFoundPage.js",
+      "name": "./src/client/pages/NotFoundPage.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./pages/TestPage": [
+    {
+      "id": "./src/client/pages/TestPage.js",
+      "name": "./src/client/pages/TestPage.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./reducers": [
+    {
+      "id": "./src/client/reducers/index.js",
+      "name": "./src/client/reducers/index.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./routes": [
+    {
+      "id": "./src/client/routes.js",
+      "name": "./src/client/routes.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ]
+}
