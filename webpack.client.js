@@ -1,12 +1,17 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+const { ReactLoadablePlugin } = require("react-loadable/webpack");
+const ManifestPlugin = require("webpack-manifest-plugin");
 
 module.exports = {
   mode: "development",
   entry: "./src/client/index.js",
   output: {
     path: path.resolve(__dirname, "public"),
-    filename: "bundle.js"
+    filename: "[name].[chunkhash].js",
+    publicPath: "/",
+    chunkFilename: "[name].[chunkhash].js"
   },
   module: {
     rules: [
@@ -29,9 +34,25 @@ module.exports = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(["public"]),
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
-    })
-  ]
+    }),
+    new ReactLoadablePlugin({
+      filename: "./public/react-loadable.json"
+    }),
+    new ManifestPlugin()
+  ],
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendors",
+          chunks: "all"
+        }
+      }
+    }
+  }
 };

@@ -1,6 +1,8 @@
 import "babel-polyfill";
 import express from "express";
+import path from "path";
 import { matchPath } from "react-router-dom";
+import Loadable from "react-loadable";
 import routes from "../client/routes";
 import renderer from "./helpers/renderer.js";
 import createStore from "./helpers/createStore";
@@ -8,6 +10,10 @@ import createStore from "./helpers/createStore";
 const app = express();
 
 app.use(express.static("public"));
+
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "..", "..", "public", "index.html"));
+// });
 app.get("*", (req, res, next) => {
   const store = createStore(req);
   const activeRoutes = routes.filter(route => matchPath(req.path, route)) || [];
@@ -30,7 +36,8 @@ app.get("*", (req, res, next) => {
     })
     .catch(next);
 });
-
-app.listen(3000, () => {
-  console.log("Listening on port 3000");
+Loadable.preloadAll().then(() => {
+  app.listen(3000, () => {
+    console.log("Listening on port 3000");
+  });
 });

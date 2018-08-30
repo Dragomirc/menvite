@@ -8,7 +8,8 @@ module.exports = {
   entry: "./src/server/server.js",
   output: {
     path: path.resolve(__dirname, "build"),
-    filename: "server.js"
+    filename: "server.js",
+    publicPath: "/"
   },
   module: {
     rules: [
@@ -19,6 +20,7 @@ module.exports = {
       }
     ]
   },
+
   // creates and externals function that ingores node_modules from bundling
   externals: [webpackNodeExternals()]
 };
