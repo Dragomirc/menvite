@@ -1,6 +1,6 @@
 import React from "react";
 import { renderToString } from "react-dom/server";
-import { StaticRouter, Route, Switch } from "react-router-dom";
+import { StaticRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import Loadable from "react-loadable";
 import { getBundles } from "react-loadable/webpack";

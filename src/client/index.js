@@ -1,6 +1,5 @@
-//Startup point for the client side application
 import React from "react";
-import ReactDOM from "react-dom";
+import { hydrate, render } from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
@@ -25,4 +24,5 @@ Loadable.preloadReady().then(() =>
     </Provider>,
     document.querySelector("#root")
   )
+
 );
