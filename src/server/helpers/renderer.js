@@ -6,7 +6,8 @@ import Loadable from "react-loadable";
 import { getBundles } from "react-loadable/webpack";
 import serialize from "serialize-javascript";
 import App from "../../client/App";
-import stats from "../../../build/react-loadable.json";
+import stats from "../../../public/react-loadable.json";
+import manifest from "../../../public/manifest.json";
 
 export default (req, store, context) => {
   let modules = [];
@@ -31,15 +32,12 @@ export default (req, store, context) => {
         <body>
           <div id="root">${content}</div>
          <script>window.INITIAL_STATE = ${serialize(store.getState())}</script>
-         <script src="main.js"></script>
-         <script src="vendors.js"></script>
+         <script src="${manifest["main.js"]}"></script>
+         <script src="${manifest["vendors.js"]}"></script>
       
            ${bundles
              .map(bundle => {
                return `<script src="${bundle.publicPath}"></script>`;
-               // alternatively if you are using publicPath option in webpack config
-               // you can use the publicPath value from bundle, e.g:
-               // return `<script src="${bundle.publicPath}"></script>`
              })
              .join("\n")}
           
@@ -47,4 +45,3 @@ export default (req, store, context) => {
     </html>     
   `;
 };
-//          <script src="bundle.js"></script>
