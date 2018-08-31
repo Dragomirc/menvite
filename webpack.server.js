@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const webpackNodeExternals = require("webpack-node-externals");
+const shellPlugin = require("webpack-shell-plugin");
 
 module.exports = {
   mode: "development",
@@ -27,6 +28,9 @@ module.exports = {
   plugins: [
     new webpack.optimize.LimitChunkCountPlugin({
       maxChunks: 1
+    }),
+    new shellPlugin({
+      onBuildEnd: ['"nodemon --watch build --exec node build/server.js']
     })
   ]
 };

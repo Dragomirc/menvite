@@ -11,48 +11,48 @@
     {
       "id": "./src/client/App.js",
       "name": "./src/client/App.js",
-      "file": "main.c7d162aa9576c36d9855.js",
-      "publicPath": "/main.c7d162aa9576c36d9855.js"
+      "file": "main.428126213bafd75ab8cd.js",
+      "publicPath": "/main.428126213bafd75ab8cd.js"
     }
   ],
   "./src/client/index.js": [
     {
       "id": "./src/client/index.js",
       "name": "./src/client/index.js",
-      "file": "main.c7d162aa9576c36d9855.js",
-      "publicPath": "/main.c7d162aa9576c36d9855.js"
+      "file": "main.428126213bafd75ab8cd.js",
+      "publicPath": "/main.428126213bafd75ab8cd.js"
     }
   ],
   "./pages/HomePage": [
     {
       "id": "./src/client/pages/HomePage.js",
       "name": "./src/client/pages/HomePage.js",
-      "file": "main.c7d162aa9576c36d9855.js",
-      "publicPath": "/main.c7d162aa9576c36d9855.js"
+      "file": "main.428126213bafd75ab8cd.js",
+      "publicPath": "/main.428126213bafd75ab8cd.js"
     }
   ],
   "./pages/NotFoundPage": [
     {
       "id": "./src/client/pages/NotFoundPage.js",
       "name": "./src/client/pages/NotFoundPage.js",
-      "file": "main.c7d162aa9576c36d9855.js",
-      "publicPath": "/main.c7d162aa9576c36d9855.js"
+      "file": "main.428126213bafd75ab8cd.js",
+      "publicPath": "/main.428126213bafd75ab8cd.js"
     }
   ],
   "./reducers": [
     {
       "id": "./src/client/reducers/index.js",
       "name": "./src/client/reducers/index.js",
-      "file": "main.c7d162aa9576c36d9855.js",
-      "publicPath": "/main.c7d162aa9576c36d9855.js"
+      "file": "main.428126213bafd75ab8cd.js",
+      "publicPath": "/main.428126213bafd75ab8cd.js"
     }
   ],
   "./routes": [
     {
       "id": "./src/client/routes.js",
       "name": "./src/client/routes.js",
-      "file": "main.c7d162aa9576c36d9855.js",
-      "publicPath": "/main.c7d162aa9576c36d9855.js"
+      "file": "main.428126213bafd75ab8cd.js",
+      "publicPath": "/main.428126213bafd75ab8cd.js"
     }
   ],
   "axios": [

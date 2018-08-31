@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const { ReactLoadablePlugin } = require("react-loadable/webpack");
 const ManifestPlugin = require("webpack-manifest-plugin");
-
+const shellPlugin = require("webpack-shell-plugin");
 module.exports = {
   mode: "development",
   entry: "./src/client/index.js",
@@ -42,7 +42,10 @@ module.exports = {
     new ReactLoadablePlugin({
       filename: "./public/react-loadable.json"
     }),
-    new ManifestPlugin()
+    new ManifestPlugin(),
+    new shellPlugin({
+      onBuildEnd: ["webpack --config webpack.server.js --watch"]
+    })
   ],
   optimization: {
     splitChunks: {
