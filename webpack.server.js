@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 const webpackNodeExternals = require("webpack-node-externals");
 
 module.exports = {
@@ -22,5 +23,10 @@ module.exports = {
   },
 
   // creates and externals function that ingores node_modules from bundling
-  externals: [webpackNodeExternals()]
+  externals: [webpackNodeExternals()],
+  plugins: [
+    new webpack.optimize.LimitChunkCountPlugin({
+      maxChunks: 1
+    })
+  ]
 };
