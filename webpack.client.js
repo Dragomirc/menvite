@@ -4,14 +4,16 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 const { ReactLoadablePlugin } = require("react-loadable/webpack");
 const ManifestPlugin = require("webpack-manifest-plugin");
 const shellPlugin = require("webpack-shell-plugin");
+
 module.exports = {
   mode: "development",
+  target: "web",
   entry: "./src/client/index.js",
   output: {
-    path: path.resolve(__dirname, "public"),
-    filename: "[name].[chunkhash].js",
+    path: path.join(__dirname, "public"),
+    filename: "[name].[hash].js",
     publicPath: "/",
-    chunkFilename: "[name].[chunkhash].js"
+    chunkFilename: "[name].[hash].js"
   },
   module: {
     rules: [
@@ -39,6 +41,7 @@ module.exports = {
       filename: "[name].css",
       chunkFilename: "[id].css"
     }),
+
     new ReactLoadablePlugin({
       filename: "./public/react-loadable.json"
     }),

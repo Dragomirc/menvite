@@ -30,7 +30,7 @@ module.exports = {
       maxChunks: 1
     }),
     new shellPlugin({
-      onBuildEnd: ['"nodemon --watch build --exec node build/server.js']
+      onBuildEnd: ["nodemon --watch build --exec node build/server.js"]
     })
   ]
 };
