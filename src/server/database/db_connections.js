@@ -1,10 +1,9 @@
-import { Pool } from "pg";
-import url from "url";
-import env2 from "env2";
-env2("./config.env");
+const { Pool } = require("pg");
+const url = require("url");
+require("env2")("../../../config.env");
 let options = {};
 
-let DATABASE_URL = process.env.DATABASE_URL;
+let DATABASE_URL = process.env.DATABASE_URL; // "postgres://dragomir:dragomir@localhost:5432/events";
 if (process.env.TRAVIS === "true") {
   options = {
     database: "travis_ci_test"
@@ -29,4 +28,4 @@ if (process.env.TRAVIS === "true") {
   options.ssl = options.host !== "localhost";
 }
 
-export default new Pool(options);
+module.exports = new Pool(options);
