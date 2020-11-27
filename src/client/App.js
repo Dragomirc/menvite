@@ -4,6 +4,7 @@ import routes from "./routes";
 import NotFoundPage from "./pages/NotFoundPage";
 
 const App = props => {
+  console.log('1')
   return (
     <div>
       <Switch>
