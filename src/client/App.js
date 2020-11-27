@@ -5,6 +5,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 
 const App = props => {
   console.log('1')
+  console.log('2')
   return (
     <div>
       <Switch>
